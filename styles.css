@@ -1,0 +1,42 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+.container{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+}
+
+
+.column{
+    float: left;
+}
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.left{
+    width: 30%;
+    height: 600px;
+    background-color: rgb(181, 172, 148);
+}
+
+.middle{
+    width: 50%;
+    height: 600px;
+    background-color:rgb(141, 156, 151)
+}
+
+.right{
+    width: 20%;
+    height: 600px;
+    background-color: rgb(157, 171, 171);
+}
+
